@@ -3,21 +3,6 @@
 ## Overview
 A comprehensive data analysis project demonstrating advanced Python analytics capabilities through the analysis of an online retail dataset. This project showcases end-to-end data science workflows, from data cleaning and exploration to advanced customer segmentation using machine learning techniques. The analysis was primarily conducted as a single-pass exploration, with subsequent modifications focused mainly on visualization enhancement and documentation clarity rather than analytical iterations.
 
-## Dataset Source
-The analysis uses the "Online Retail" dataset from the UCI Machine Learning Repository:
-- Source: [UCI Machine Learning Repository - Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail)
-- Time Period: December 2010 to December 2011
-- Business Context: UK-based non-store online retail specializing in unique all-occasion gifts
-- Customer Base: Mix of retail and wholesale customers
-- Transaction Types: All transactions including sales, returns, and cancellations
-
-Dataset Characteristics:
-- Transactional data spanning one year
-- Contains complete purchase history
-- Includes customer details and product information
-- Features both retail and wholesale pricing
-- International customer base with focus on UK market
-
 ## Key Project Components
 
 ### 1. Data Cleaning & Validation
@@ -96,19 +81,28 @@ Dataset Characteristics:
 - Statistical Analysis: statsmodels
 - Optimization: Optuna
 
+## Dataset Source
+The analysis uses the "Online Retail" dataset from the UCI Machine Learning Repository:
+- Source: [UCI Machine Learning Repository - Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail)
+- Time Period: December 2010 to December 2011
+- Business Context: UK-based non-store online retail specializing in unique all-occasion gifts
+- Customer Base: Mix of retail and wholesale customers
+- Transaction Types: All transactions including sales, returns, adjustments, and cancellations
+- Dataset Size: 541909 rows, 8 columns
+
 ### Project Structure
 ```
 ├── notebooks/
 │   ├── 1. data cleaning and exploration.ipynb # Data cleaning & exploration
 │   ├── 2. data analysis and visualization.ipynb # Business analysis & visualization
 │   ├── 3. machine learning - stock clustering.ipynb        # Product categorization and stock analysis
-│   └── 4. machine learning - customer segmentation through clustering.ipynb  # Statistical analysis & segmentation
+│   └── 4. machine learning - customer segmentation through clustering.ipynb  # Statistical analysis & segmentatio
 ```
 
 ## Contact
-[Lance Baldridge]
-- LinkedIn: [Your LinkedIn]
-- Email: [Your Email]
+Lance Kendrick F. Baldridge
+- LinkedIn: [\[LinkedIn\]](https://www.linkedin.com/in/lance-baldridge-2a291097/)
+- Email: lance_baldridge@outlook.com
 
 This project demonstrates proficiency in:
 - Data Analysis & Statistics
