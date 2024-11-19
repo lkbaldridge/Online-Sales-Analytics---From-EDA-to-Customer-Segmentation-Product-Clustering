@@ -106,7 +106,7 @@ Dataset Characteristics:
 ```
 
 ## Contact
-[Your Name]
+[Lance Baldridge]
 - LinkedIn: [Your LinkedIn]
 - Email: [Your Email]
 
