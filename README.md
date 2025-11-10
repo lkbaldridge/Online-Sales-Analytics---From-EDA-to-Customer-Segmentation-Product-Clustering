@@ -1,112 +1,62 @@
-# Retail Sales Data Analysis Project
+# Customer Segmentation & Business Insights for Online Retail
 
-## Overview
-A comprehensive data analysis project demonstrating advanced Python analytics capabilities through the analysis of an online retail dataset. This project showcases end-to-end data science workflows, from data cleaning and exploration to advanced customer segmentation using machine learning techniques. The analysis was primarily conducted as a single-pass exploration, with subsequent modifications focused mainly on visualization enhancement and documentation clarity rather than analytical iterations.
+This repository contains a comprehensive, end-to-end data science project that analyzes a transactional dataset to derive actionable business intelligence. The project progresses from foundational data cleaning and exploratory analysis to advanced unsupervised machine learning for product categorization and customer segmentation.
 
-## Key Project Components
+The culmination of this work is a **formal academic-style research paper** that details the methodology and findings of the machine learning pipeline.
 
-### 1. Data Cleaning & Validation
-- Systematic data quality assessment and cleaning
-  - Identification and handling of anomalous data (cancelled orders, negative quantity/prices, non-standard stock codes)
-  - Validation of high-value transactions
-  - Duplicate transaction analysis
-- Advanced data quality checks
-  - Statistical outlier detection
-  - Transaction pattern validation
-  - Price and quantity range validation
-- Data standardization and transformation
-  - DateTime conversions and standardization
-  - Customer ID formatting
-  - Stock code standardization
-  - Derived metric calculations
+[Read the Full Research Paper Here](https://github.com/lkbaldridge/Online-Sales-Analytics---From-EDA-to-Customer-Segmentation-Product-Clustering/blob/main/Academic%20Paper.pdf)
 
-### 2. Business Analysis & Visualization
-- Sales pattern analysis
-  - Temporal trends visualization
-  - Geographic distribution mapping
-  - Product category performance
-  - Customer purchase behaviors
-- Interactive visualizations
-  - Time series trend plots
-  - Choropleth maps for geographical analysis
-  - Distribution analysis plots
-  - Transaction pattern visualization
-- Business metric development
-  - Customer value calculations
-  - Product performance metrics
-  - Sales trend analysis
-  - Market penetration insights
+---
 
-### 3. Product Analysis & Categorization
-- Hierarchical clustering implementation
-  - Product grouping based on characteristics
-  - Price-based categorization
-  - Stock code pattern analysis
-  - Category performance evaluation
-- Product insights
-  - Category-based sales analysis
-  - Product association patterns
-  - Inventory optimization insights
+### Project Summary & Key Achievements
 
-### 4. Customer Segmentation & Statistical Analysis
-- Advanced statistical analysis
-  - Distribution testing
-  - Outlier analysis
-  - Likelihood ratio testing
-  - Normality validation
-- Machine learning implementation
-  - Gaussian Mixture Models for segmentation
-  - Hyperparameter optimization with Optuna
-  - Feature engineering
-  - Model evaluation metrics
-- Customer behavior modeling
-  - Purchase pattern identification
-  - Value-based categorization
-  - Segment-based insights
-  - Customer lifecycle analysis
+This project successfully answers critical business questions by transforming raw data into strategic insights.
 
-## Key Insights Generated
-- Identified key customer segments and their characteristics
-- Discovered product category performance patterns
-- Mapped geographical sales distribution
-- Analyzed temporal sales trends
-- Generated actionable business recommendations
+-   **Business Insights:** Identified strong Q4 seasonality, confirmed the Pareto Principle (over 28% of revenue comes from ~1% of customers), and mapped the company's core markets in the UK and Western Europe.
+-   **Automated Product Categorization:** Developed a novel hybrid model combining **Hierarchical Clustering and NLP** to automatically categorize thousands of unique products, solving a key business problem and enabling deeper analysis.
+-   **Data-Driven Customer Personas:** Implemented a **Gaussian Mixture Model (GMM)**, optimized with Optuna, to segment the customer base into five distinct, actionable personas, including:
+    -   **Core Active:** The loyal, high-frequency customer base.
+    -   **High-Value VIPs:** High-spending accounts critical to revenue.
+    -   **At-Risk:** Customers showing signs of lapsing, representing a key target for re-engagement.
 
-## Technical Implementation
+---
 
-### Tools & Libraries
-- Data Processing: pandas, numpy
-- Machine Learning: scikit-learn, scipy
-- Visualization: plotly
-- Statistical Analysis: statsmodels
-- Optimization: Optuna
+### Project Structure & Notebooks
 
-## Dataset Source
-The analysis uses the "Online Retail" dataset from the UCI Machine Learning Repository:
-- Source: [UCI Machine Learning Repository - Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail)
-- Time Period: December 2010 to December 2011
-- Business Context: UK-based non-store online retail specializing in unique all-occasion gifts
-- Customer Base: Mix of retail and wholesale customers
-- Transaction Types: All transactions including sales, returns, adjustments, and cancellations
-- Dataset Size: 541909 rows, 8 columns
+This analysis is broken down into four sequential Jupyter notebooks that tell the complete story of the project, from raw data to final insights.
 
-### Project Structure
-```
-├── notebooks/
-│   ├── 1. data cleaning and exploration.ipynb # Data cleaning & exploration
-│   ├── 2. data analysis and visualization.ipynb # Business analysis & visualization
-│   ├── 3. machine learning - stock clustering.ipynb        # Product categorization and stock analysis
-│   └── 4. machine learning - customer segmentation through clustering.ipynb  # Statistical analysis & segmentatio
-```
+-   **`01_Data_Cleaning_and_EDA.ipynb`**
+    -   *Focus:* Foundational data cleaning, handling of over 100,000 null values, filtering cancelled orders, and investigating data quality anomalies.
+-   **`02_Business_Insights_and_Visualization.ipynb`**
+    -   *Focus:* High-level business analysis, including visualization of temporal trends, geographic sales distribution, and identification of top customers.
+-   **`03_Product_Clustering_with_Hierarchical_NLP.ipynb`**
+    -   *Focus:* The first ML phase. Implements a hybrid model to automatically categorize all products, enriching the dataset for the final analysis.
+-   **`04_Customer_Segmentation_with_GMM.ipynb`**
+    -   *Focus:* The final ML phase. Involves RFM-style feature engineering, statistical validation, hyperparameter tuning with Optuna, and GMM implementation to define customer personas.
 
-## Contact
+---
+
+### Technical Implementation
+
+-   **Data Processing & Analysis:** Pandas, NumPy
+-   **Machine Learning:** Scikit-learn, SciPy
+-   **Statistical Analysis:** Statsmodels, Pingouin
+-   **Visualization:** Plotly
+-   **Hyperparameter Optimization:** Optuna
+-   **NLP:** NLTK
+
+---
+
+### Dataset Source
+
+The analysis uses the "Online Retail" dataset from the UCI Machine Learning Repository.
+-   **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail)
+-   **Context:** UK-based online retailer specializing in unique gifts.
+-   **Data:** Contains all transactions from December 2010 to December 2011.
+
+---
+
+### Contact
 Lance Kendrick F. Baldridge
-- LinkedIn: [\[LinkedIn\]](https://www.linkedin.com/in/lance-baldridge-2a291097/)
-- Email: lance_baldridge@outlook.com
-
-This project demonstrates proficiency in:
-- Data Analysis & Statistics
-- Machine Learning
-- Python Programming
-- Business Analytics
-- Data Visualization
+- **LinkedIn:** [linkedin.com/in/lance-baldridge-2a291097](https://www.linkedin.com/in/lance-baldridge-2a291097/)
+- **Email:** lance_baldridge@outlook.com
